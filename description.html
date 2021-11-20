@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Game </title>
+        <link rel="stylesheet" href="css/style.css" id="theme_game">
+    </head>
+    <body>
+    	<div class="sample_div">
+    		<div class="indication">
+    			<p>Здесь указан квадрат, копию которого тебе необходимо найти</p>
+    		</div>
+    		<div id="sample_square">
+    		</div> 
+            
+        </div>
+        <div id="line"></div>
+        <h2>Здесь указан выбор квадратов, один из которых будет копия квадрата сверху!</h2>
+        <div class="answers_square" id="rec_answers">
+            <div class="square" id='1'></div>
+            <div class="square" id='2'></div>
+            <div class="square" id='3'></div>
+            <div class="square" style="background-color: #fff" id='4'></div>
+            <div class="square" id='5'></div>
+            <div class="square" id='6'></div>
+            <div class="square" id='7'></div>
+            <div class="square" id='8'></div>
+        </div>
+
+        <img src="img/correct.png" alt="correct" class="correct_wrong_img" id="correct">
+        <img src="img/wrong.png" alt="wrong" class="correct_wrong_img" id="wrong">
+<button class="btn" onclick="main_menu()"><span>В главное меню</span></button>
+        <h2>-/10</h2>
+        <script src="js/game.js"></script>
+    </body>
+</html>

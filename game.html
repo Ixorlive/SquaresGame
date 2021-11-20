@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Game </title>
+        <link rel="stylesheet" href="css/style.css" id="theme_game">
+    </head>
+    <body>
+    	<div class="sample_div">
+    		<div class="count">
+    			<p id="score">Счёт: 0</p>
+    			<p id="time">Время: </p>
+    		</div>
+    		<div id="sample_square">
+    		</div> 
+            
+        </div>
+        <div id="line"></div>
+        <h1>Выбири одинаковый квадрат</h1>
+        <div class="answers_square" id="rec_answers">
+            <div class="square" id='1'></div>
+            <div class="square" id='2'></div>
+            <div class="square" id='3'></div>
+            <div class="square" id='4'></div>
+            <div class="square" id='5'></div>
+            <div class="square" id='6'></div>
+            <div class="square" id='7'></div>
+            <div class="square" id='8'></div>
+        </div>
+
+        <img src="img/correct.png" alt="correct" class="correct_wrong_img" id="correct">
+        <img src="img/wrong.png" alt="wrong" class="correct_wrong_img" id="wrong">
+<button class="btn" onclick="main_menu()"><span>В главное меню</span></button>
+        <h2>-/10</h2>
+        
+        
+        <script src="js/progressbar.js"></script>
+        <script src="js/time.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/themecheck.js"></script>
+    </body>
+</html>

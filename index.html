@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ixor Game</title>
+	<link rel="stylesheet" href="css\mainpage.css" id="theme">
+</head>
+<body>
+	<div class="container" id="main">
+		<h1>Игра в квадратики</h1>
+		<button class="btn" id="continue_btn" onclick="start()"><span>Продолжить</span></button>
+		<button class="btn" onclick="new_game()"><span>Начать новую игру</span></button>
+		<button class="btn" onclick="desc()"><span>Описание</span></button>
+		<button class="btn" onclick="switchTheme()"><span>Тема игры</span></button>
+	</div>
+
+	<div class="gamemode" id="mod">
+		<h1>Выбирете режим игры</h1>
+		<button class="btn" onclick="start_new_game(3)"><span>Режим 3 на 3</span></button>
+		<button class="btn" onclick="start_new_game(4)"><span>Режим 4 на 4</span></button>
+		<button class="btn" onclick="start_new_game(5)"><span>Режим 5 на 5</span></button>
+		<button class="btn" onclick="start_new_game(6)"><span>Режим 6 на 6</span></button>
+		<button class="btn" onclick="start_new_game(7)"><span>Режим 7 на 7</span></button>
+		<button class="btn" onclick="back()"><span>Назад</span></button>
+	</div>
+	<p class="author_project"> Project by <a href="https://github.com/Ixorlive" target="_blank"> Igor Shakirov </a> </p>
+	<div class="images" id="imagesid">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+	
+	<script src="js/game.js"></script>
+	<script src="js/themecheck.js"></script>
+	<script src="js/mainpage.js"></script>
+</body>
+</html>
